@@ -17,7 +17,7 @@ function PlayerPreview(props) {
                 className='reset'
                 onClick={props.onReset.bind(null, props.id)}>
                 Reset
-      </button>
+            </button>
         </div>
     )
 }
@@ -38,6 +38,7 @@ class PlayerInput extends React.Component {
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
+
     handleChange(event) {
         var value = event.target.value;
 
@@ -47,6 +48,7 @@ class PlayerInput extends React.Component {
             }
         });
     }
+
     handleSubmit(event) {
         event.preventDefault();
 
@@ -55,6 +57,7 @@ class PlayerInput extends React.Component {
             this.state.username
         );
     }
+
     render() {
         return (
             <form className='column' onSubmit={this.handleSubmit}>
@@ -72,7 +75,7 @@ class PlayerInput extends React.Component {
                     type='submit'
                     disabled={!this.state.username}>
                     Submit
-        </button>
+                </button>
             </form>
         )
     }
@@ -101,6 +104,7 @@ class Battle extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleReset = this.handleReset.bind(this);
     }
+
     handleSubmit(id, username) {
         this.setState(function () {
             var newState = {};
@@ -109,6 +113,7 @@ class Battle extends React.Component {
             return newState;
         });
     }
+
     handleReset(id) {
         this.setState(function () {
             var newState = {};
@@ -117,6 +122,7 @@ class Battle extends React.Component {
             return newState;
         })
     }
+
     render() {
         var match = this.props.match;
         var playerOneName = this.state.playerOneName;

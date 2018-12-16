@@ -2,6 +2,16 @@ body {
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #d0021b;
+}
+
 ul {
   padding: 0;
 }
@@ -9,15 +19,6 @@ ul {
 li {
   list-style-type: none;
 }
-
-.avatar {
-  width: 150px;
-  border-radius: 50%;
-}
-
-.active {
-  font-weight: bold;
-} 
 
 .button {
   color: #e6e6e6;
@@ -31,24 +32,24 @@ li {
   padding: 7px 0;
   margin: 10px auto;
 }
- .button:hover:enabled {
+
+.button:hover:enabled {
   background: linear-gradient(#1a1a1a,#0a0a0a);
   color: #fff;
   text-decoration: none;
 }
- .button:active {
+
+.button:active {
   transform: translateY(1px);
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+.avatar {
+  width: 150px;
+  border-radius: 50%;
 }
 
-.home-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.space-list-items {
+  margin-bottom: 7px;
 }
 
 .languages {
@@ -60,14 +61,6 @@ li {
   margin: 10px;
   font-weight: bold;
   cursor: pointer;
-}
-
-.nav {
-  display: flex;
-}
-
- .nav li {
-  margin-right: 15px;
 }
 
 .popular-list {
@@ -86,19 +79,66 @@ li {
   margin: 10px;
 }
 
-.space-list-items {
-  margin-bottom: 7px;
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav li {
+  margin-right: 15px;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  align-items: center;
+}
+
+.column input {
+  border-radius: 3px;
+  margin: 10px 0;
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.43);
+  font-size: 16px;
+  width: 80%;
+}
+
+.column label {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.header {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 200;
 }
 
 .reset {
- border: none;
- background: transparent;
- color: #d0021b;
- display: block;
- width: 100%;
- text-align: center;
+  border: none;
+  background: transparent;
+  color: #d0021b;
+  display: block;
+  width: 100%;
+  text-align: center;
 }
 
 .reset:hover {
- cursor: pointer;
+  cursor: pointer;
 }
