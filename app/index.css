@@ -15,9 +15,40 @@ li {
   border-radius: 50%;
 }
 
+.active {
+  font-weight: bold;
+} 
+
+.button {
+  color: #e6e6e6;
+  background: #0a0a0a;
+  border: none;
+  font-size: 16px;
+  border-radius: 3px;
+  width: 200px;
+  text-align: center;
+  display: block;
+  padding: 7px 0;
+  margin: 10px auto;
+}
+ .button:hover:enabled {
+  background: linear-gradient(#1a1a1a,#0a0a0a);
+  color: #fff;
+  text-decoration: none;
+}
+ .button:active {
+  transform: translateY(1px);
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .languages {
@@ -29,6 +60,14 @@ li {
   margin: 10px;
   font-weight: bold;
   cursor: pointer;
+}
+
+.nav {
+  display: flex;
+}
+
+ .nav li {
+  margin-right: 15px;
 }
 
 .popular-list {
@@ -51,3 +90,15 @@ li {
   margin-bottom: 7px;
 }
 
+.reset {
+ border: none;
+ background: transparent;
+ color: #d0021b;
+ display: block;
+ width: 100%;
+ text-align: center;
+}
+
+.reset:hover {
+ cursor: pointer;
+}
